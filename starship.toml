@@ -1,0 +1,13 @@
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
