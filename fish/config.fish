@@ -41,19 +41,19 @@ alias y yazi
 alias ff fastfetch
 alias zed zeditor
 
-# Github abbreviations
-abbr -a lg lazygit
-abbr -a gl 'git log --graph --oneline'
-abbr -a gs 'git status'
-abbr -a gd 'git diff'
-abbr -a go 'git checkout'
-abbr -a ga 'git add'
-abbr -a gb 'git branch'
-abbr -a gba 'git branch -a'
-abbr -a graph 'git log --all --decorate --oneline --graph'
+# Github aliaseviations
+alias lg lazygit
+alias gl 'git log --graph --oneline'
+alias gs 'git status'
+alias gd 'git diff'
+alias go 'git checkout'
+alias ga 'git add'
+alias gb 'git branch'
+alias gba 'git branch -a'
+alias graph 'git log --all --decorate --oneline --graph'
 
 # Path
-abbr -a path "echo $PATH | tr ':' '\n'"
+alias path "echo $PATH | tr ':' '\n'"
 
 # USB mnt
 alias mms 'udisksctl mount -b /dev/sdb'
