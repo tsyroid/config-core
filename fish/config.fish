@@ -26,6 +26,7 @@ alias ze 'zoxide edit'
 alias sf 'source ~/.config/fish/config.fish'
 alias sp startplasma-wayland
 alias hp Hyprland
+alias sh 'echo $SHELL' # which shell in use
 
 alias backup 'restic -r /media/restic/home/ --verbose backup /home/taz/ --exclude=".src"'
 
