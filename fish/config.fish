@@ -27,6 +27,8 @@ alias sf 'source ~/.config/fish/config.fish'
 alias sp startplasma-wayland
 alias hp Hyprland
 
+alias backup 'restic -r /media/restic/home/ --verbose backup /home/taz/ --exclude=".src"'
+
 # Navigation
 alias .1 'cd ..'
 alias .2 'cd ../..'
