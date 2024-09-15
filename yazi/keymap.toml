@@ -17,20 +17,5 @@ on = "<Esc>"
 run = "close"
 desc = "Cancel input"
 
-# Smart enter keybind
-# Code resides in plugins/smart-enter.yazi/init.lua
-[[manager.prepend_keymap]]
-on = "l"
-run = "plugin --sync smart-enter"
-desc = "Enter the child directory or open file"
 
-# Smart paste
-[[manager.prepend_keymap]]
-on = "p"
-run = "plugin --sync smart-paste"
-desc = "Paste into the hovered directory or CWD"
-
-# Copy selected file to system clipboard (xclip version)
-[[manager.prepend_keymap]]
-on = "y"
-run = ['''shell 'echo "$@" | xclip -i -selection clipboard -t text/uri-list' --confirm''', "yank" ]
+# EOF #
