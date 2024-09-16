@@ -9,7 +9,7 @@ set -Ux EDITOR nvim
 # General aliases
 alias c clear
 alias :q exit # because sometimes my fingers are stupid
-alias rmf 'rm -rf' # CAREFULL!!
+# alias rmf 'rm -rf' # CAREFULL!!
 alias mkdir 'mkdir -p'
 
 # Eza
@@ -49,7 +49,9 @@ alias lg lazygit
 alias gl 'git log --graph --oneline'
 alias gs 'git status'
 alias gd 'git diff'
+alias gf 'git fetch'
 alias go 'git checkout'
+alias gp 'git pull'
 alias ga 'git add'
 alias gb 'git branch'
 alias gba 'git branch -a'
