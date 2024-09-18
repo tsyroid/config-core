@@ -6,6 +6,9 @@ set fish_greeting ""
 set -Ux TERM xterm-256color
 set -Ux EDITOR nvim
 
+# Path
+fish_add_path $HOME/.local/bin
+
 # General aliases
 alias c clear
 alias :q exit # because sometimes my fingers are stupid
@@ -28,7 +31,10 @@ alias sp startplasma-wayland
 alias hp Hyprland
 alias sh 'echo $SHELL' # which shell in use
 
+# Restic
 alias backup 'restic -r /media/restic/home/ --verbose backup /home/taz/ --exclude=".src"'
+alias snapshots 'restic -r /media/restic/home snapshots'
+alias latest 'restic -r /media/restic/home ls latest | bat'
 
 # Navigation
 alias .1 'cd ..'
@@ -40,11 +46,11 @@ alias .5 'cd ../../../../..'
 # App aliases
 alias v nvim
 alias vi nvim
-alias y yazi
+# alias y yazi # replaced with function below
 alias ff fastfetch
 alias zed zeditor
 
-# Github aliaseviations
+# Github aliases
 alias lg lazygit
 alias gl 'git log --graph --oneline'
 alias gs 'git status'
@@ -57,13 +63,24 @@ alias gb 'git branch'
 alias gba 'git branch -a'
 alias graph 'git log --all --decorate --oneline --graph'
 
-# Path
+# Path alias
 alias path "echo $PATH | tr ':' '\n'"
 
 # USB mnt
 alias mms 'udisksctl mount -b /dev/sdb'
 alias lms 'ln -sf /run/media/taz/transfer ~/Sony'
 alias ums 'umount /dev/sdb && rm ~/Sony'
+
+# Yazi shell wrapper
+
+function y
+    set tmp (mktemp -t "yazi-cwd.XXXXXX")
+    yazi $argv --cwd-file="$tmp"
+    if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+        builtin cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
+end
 
 if status is-interactive
     zoxide init fish | source
