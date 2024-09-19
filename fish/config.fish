@@ -31,6 +31,9 @@ alias sp startplasma-wayland
 alias hp Hyprland
 alias sh 'echo $SHELL' # which shell in use
 
+# Titus Tech Linutil
+alias linutil 'curl -fsSL https://christitus.com/linux | bash'
+
 # Restic
 alias backup 'restic -r /media/restic/home/ --verbose backup /home/taz/ --exclude=".src"'
 alias snapshots 'restic -r /media/restic/home snapshots'
