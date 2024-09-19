@@ -82,10 +82,17 @@ function y
     rm -f -- "$tmp"
 end
 
+# Starship transient prompt
+
+function starship_transient_prompt_func
+    starship module character
+end
+
 if status is-interactive
     zoxide init fish | source
     fzf --fish | source
     starship init fish | source
+    enable_transience
 end
 
 
