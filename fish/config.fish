@@ -91,6 +91,12 @@ function starship_transient_prompt_func
     starship module character
 end
 
+# Tre
+
+function tre
+    command tre $argv -e; and source /tmp/tre_aliases_$USER ^/dev/null
+end
+
 if status is-interactive
     zoxide init fish | source
     fzf --fish | source
