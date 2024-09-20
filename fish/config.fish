@@ -28,7 +28,7 @@ alias ze 'zoxide edit'
 # System
 alias sf 'source ~/.config/fish/config.fish'
 alias sp startplasma-wayland
-alias hp Hyprland
+alias hypr Hyprland
 alias sh 'echo $SHELL' # which shell in use
 
 # Titus Tech Linutil
@@ -87,9 +87,9 @@ end
 
 # Starship transient prompt
 
-function starship_transient_prompt_func
-    starship module character
-end
+#function starship_transient_prompt_func
+#    starship module character
+#end
 
 # Tre
 
@@ -101,7 +101,7 @@ if status is-interactive
     zoxide init fish | source
     fzf --fish | source
     starship init fish | source
-    enable_transience
+    # enable_transience
 end
 
 
