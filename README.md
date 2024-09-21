@@ -1,13 +1,13 @@
 ## README - ~/.dotfiles/config (branch: main)
-## REPO: tsyroid/config-arch
+## REPO: tsyroid/config-core
 
 ### Notes
 
-Consider renaming repo to better reflect the 'base' or 'core' nature of code-base.
+Base `.config/` module designed for:
 
+(a) simple, non-GUI install on distro-agnostic Linux
 
-### TODO
+(b) base framework to build another specialty config from
 
-- [x] (2024.09.18) Pull in `config/yazi` config from branch: ml4w-test
-- [x] (2024.09.18) Pull in `config/fish/fish.conf` from branch: ml4w-test
-- [x] (2024.09.18) Pull in `config/zed` config from branch: ml4w-test
+* TODO: should probably think about building a package list to
+  supplement the apps used in this framework.
