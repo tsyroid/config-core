@@ -12,7 +12,7 @@ fish_add_path $HOME/.local/bin
 # General aliases
 alias c clear
 alias :q exit # because sometimes my fingers are stupid
-# alias rmf 'rm -rf' # CAREFULL!!
+alias rmf 'rm -rf' # CAREFULL!!
 alias mkdir 'mkdir -p'
 
 # Eza
