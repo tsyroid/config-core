@@ -1,0 +1,24 @@
+# ~/.config/alacritty/alacritty.toml
+
+import = [
+  "~/.config/alacritty/themes/themes/solarized-osaka.toml"
+]
+
+[font]
+size = 12
+
+[font.normal]
+# family = "JetBrainsMono Nerd Font Mono"
+family = "Terminess Nerd Font Mono"
+style = "Regular"
+
+[window]
+opacity = 0.85
+decorations = "Transparent"
+
+[window.padding]
+x = 15 
+y = 4
+
+[selection]
+save_to_clipboard = true
