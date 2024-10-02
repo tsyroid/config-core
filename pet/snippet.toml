@@ -1,0 +1,14 @@
+
+[[Snippets]]
+  Description = "Eza: All files, DIRs first"
+  Filename = "/home/taz/.config/pet/snippet.toml"
+  Output = ""
+  Tag = []
+  command = "eza -al --group-directories-first"
+
+[[Snippets]]
+  Description = "Update/syncronize AUR repo (only)"
+  Filename = "/home/taz/.config/pet/snippet.toml"
+  Output = ""
+  Tag = []
+  command = "yay -Sua"
