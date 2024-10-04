@@ -12,3 +12,10 @@
   Output = ""
   Tag = []
   command = "yay -Sua"
+
+[[Snippets]]
+  Description = "Flatpak install QOwnNotes"
+  Filename = "/home/taz/.config/pet/snippet.toml"
+  Output = ""
+  Tag = []
+  command = "flatpak install flathub org.qownnotes.QOwnNotes"
