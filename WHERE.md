@@ -9,6 +9,7 @@
 - [x] I have a 'blank canvas' desktop
 - [x] I have rofi running (bare) with ZERO extra config.
 - [x] I have used (cleanly --> no dureitis (sp?) leftover): $TERMINAL=kitty; $browser=brave
+- [x] I have (repeatedly) ZERO errors on Hyprland exit (to TTY)
 - [ ] Intend to reboot, restart, and generally heavily use/test everything to-date. NO GREMLINS!
 
 
