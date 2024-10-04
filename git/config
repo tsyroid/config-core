@@ -6,7 +6,7 @@
 	email = tsyroid@gmail.com
 
 [core]
-    excludesfile = ~/.config/git/ignore
+  excludesfile = ~/.config/git/ignore
 	editor = nvim
 
 [init]
@@ -16,13 +16,13 @@
 	verbose = true
 
 [push]
-    default = current
+  default = current
 
 [rebase]
-    autoSquash = true
+  autoSquash = true
 
 [submodule]
-    recurse = true
+  recurse = true
 
 # [credential]
 #   helper = osxkeychain
@@ -37,10 +37,10 @@
 	useHttpPath = true
 
 [github]
-    user = tsyroid
+  user = tsyroid
 
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+; [filter "lfs"]
+; 	required = true
+; 	clean = git-lfs clean -- %f
+; 	smudge = git-lfs smudge -- %f
+; 	process = git-lfs filter-process
