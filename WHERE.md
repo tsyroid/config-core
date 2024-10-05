@@ -10,7 +10,10 @@
 - [x] I have rofi running (bare) with ZERO extra config.
 - [x] I have used (cleanly --> no dureitis (sp?) leftover): $TERMINAL=kitty; $browser=brave
 - [x] I have (repeatedly) ZERO errors on Hyprland exit (to TTY)
-- [ ] Intend to reboot, restart, and generally heavily use/test everything to-date. NO GREMLINS!
+- [x] Intend to reboot, restart, and generally heavily use/test everything to-date. NO GREMLINS!
+- [x] Drop in (more gooder) replacement for Rofi -- compliments titus-hyprland.
+- [x] Above tested superficially; no errors. Using default config, no changes.
+- [ ] Add exec-once module to Hyprland
 
 
 
@@ -18,6 +21,6 @@
 ## NEXT
 
 - [ ] Wallpaper: swww? or waypaper? or ?? --> KISS
-- [ ] Dress up Rofi
+- [x] Dress up Rofi
 - [ ] Waybar basic
 - [ ] Waybar advanced (between the above and here there's gonna be some detours...)
