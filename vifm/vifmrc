@@ -42,7 +42,7 @@ set undolevels=100
 " If you installed the vim.txt help file set vimhelp.
 " If would rather use a plain text help file set novimhelp.
 
-set novimhelp
+set vimhelp
 
 " If you would like to run an executable file when you
 " press return on the file name set this.
@@ -51,7 +51,8 @@ set norunexec
 
 " Selected color scheme
 
-colorscheme nord
+" colorscheme nord
+colorscheme solarized-dark
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
@@ -88,7 +89,7 @@ set incsearch
 
 " Try to leave some space from cursor to upper/lower border in lists
 
-set scrolloff=4
+set scrolloff=8
 
 " Set custom status line look
 
@@ -104,7 +105,9 @@ mark h ~/
 mark c ~/.config/
 mark d ~/Downloads/
 mark p ~/Projects/
-mark w ~/wdir/
+mark w ~/.wdir/
+mark s ~/.src/
+mark v ~/Vault/
 
 " ------------------------------------------------------------------------------
 
@@ -352,6 +355,9 @@ nnoremap e :if layoutis('only') | vsplit | else | only | endif<cr>
 " Open file in the background using its default program
 nnoremap gb :file &<cr>l
 
+" Wallpaper stuff
+nnoremap gw. :cd ~/Pictures/Wallpapers<cr>
+
 " Yank current directory path into the clipboard
 nnoremap yd :!echo %d | xclip %i<cr>
 
@@ -390,5 +396,29 @@ nnoremap <f7> :mkdir<space>
 nnoremap <f8> :delete<cr>
 
 " ------------------------------------------------------------------------------
+" Various customization examples
+
+" Use ag (the silver searcher) instead of grep
+"
+" set grepprg='ag --line-numbers %i %a %s'
+
+" Add additional place to look for executables
+"
+" let $PATH = $HOME.'/bin/fuse:'.$PATH
+
+" Block particular shortcut
+"
+" nnoremap <left> <nop>
+
+" Export IPC name of current instance as environment variable and use it to
+" communicate with the instance later.
+"
+" It can be used in some shell script that gets run from inside vifm, for
+" example, like this:
+"     vifm --server-name "$VIFM_SERVER_NAME" --remote +"cd '$PWD'"
+"
+" let $VIFM_SERVER_NAME = v:servername
 
 " vim: ft=vim ts=2 sts=2 sw=2 et
+"
+" EOF "
