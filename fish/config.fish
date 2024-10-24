@@ -13,7 +13,7 @@ set -Ux EDITOR nvim
 
 set -e fish_user_paths # clear user_paths
 fish_add_path $HOME/.local/bin
-# fish_add_path /opt/homebrew/bin # macOS
+fish_add_path /opt/homebrew/bin # macOS
 
 # if postgres
 # fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin
@@ -88,8 +88,8 @@ alias graph 'git log --all --decorate --oneline --graph'
 # alias latest 'restic -r /media/restic/home ls latest | bat'
 
 # homebrew (Linux)
-# alias bvf 'brew list --versions' # brew list (versions) formulas
-# alias bvc 'brew list --version --cask' # brew list (versions) casks
+alias bvf 'brew list --versions' # brew list (versions) formulas
+alias bvc 'brew list --version --cask' # brew list (versions) casks
 
 # VIFM
 # https://vifm.info/
