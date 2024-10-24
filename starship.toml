@@ -29,10 +29,10 @@ format = '[$ssh_symbol$hostname ]($style) '
 style = 'bold purple'
 
 [git_branch]
-symbol = "git "
+symbol = " "
 
 [git_commit]
-tag_symbol = " tag "
+tag_symbol = "  "
 
 [c]
 symbol = "C "
