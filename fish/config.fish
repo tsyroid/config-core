@@ -13,6 +13,7 @@ set -Ux EDITOR nvim
 
 set -e fish_user_paths # clear user_paths
 fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.config/emacs/bin/ # Doom Emacs
 # fish_add_path /opt/homebrew/bin # macOS
 
 # if postgres
