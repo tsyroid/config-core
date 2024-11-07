@@ -2,15 +2,16 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
-# ~/.config/yazi/yazi.toml
-
 [manager]
-ratio = [2, 3, 4]
+ratio          = [ 1, 4, 3 ]
+sort_by        = "alphabetical"
+sort_sensitive = false
+sort_reverse   = false
 sort_dir_first = true
-show_hidden = true
-show_symlink = true
-
-# yazi-rs/plugins:git
+linemode       = "none"
+show_hidden    = false
+show_symlink   = true
+scrolloff      = 5
 
 [preview]
 tab_size        = 2
@@ -182,13 +183,3 @@ sort_reverse   = false
 enabled = false
 
 [headsup]
-
-[[plugin.prepend_fetchers]]
-id = 'git'
-name = '*'
-run = 'git'
-
-[[plugin.prepend_fetchers]]
-id = 'git'
-name = '*/'
-run = 'git'
