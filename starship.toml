@@ -44,7 +44,7 @@ symbol = ".NET "
 # read_only = " ro"
 read_only = ' 🔒'
 # truncation_symbol = '…/'
-truncation_symbol = '~/'
+# truncation_symbol = '~/'
 
 [docker_context]
 symbol = "docker "
