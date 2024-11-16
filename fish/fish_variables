@@ -5,4 +5,4 @@ SETUVAR --export LESSHISTFILE:\x2d
 SETUVAR --export TERM:xterm\x2d256color
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_prompt_pwd_dir_length:0
-SETUVAR fish_user_paths:/opt/homebrew/opt/gawk/libexec/gnubin\x1e/opt/homebrew/sbin\x1e/opt/homebrew/bin\x1e/Users/taz/\x2elocal/bin
+SETUVAR fish_user_paths:/opt/homebrew/opt/gnu\x2dtar/libexec/gnubin\x1e/opt/homebrew/opt/gawk/libexec/gnubin\x1e/opt/homebrew/sbin\x1e/opt/homebrew/bin\x1e/Users/taz/\x2elocal/bin
