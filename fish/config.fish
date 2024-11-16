@@ -9,11 +9,15 @@ set fish_greeting ""
 set -Ux TERM xterm-256color
 set -Ux EDITOR nvim
 
-## [[ Set paths ]] ##
+# Banish pesky .lesshst files in root
+set -Ux LESSHISTFILE -
 
+## [[ Set paths ]] ##
 set -e fish_user_paths # clear user_paths
 fish_add_path $HOME/.local/bin
 fish_add_path /opt/homebrew/bin # macOS
+fish_add_path /opt/homebrew/sbin # macOS
+fish_add_path /opt/homebrew/opt/gawk/libexec/gnubin # macOS; brew
 # fish_add_path $HOME/.config/emacs/bin/ # Doom Emacs
 
 # if postgres
