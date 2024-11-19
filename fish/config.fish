@@ -113,23 +113,19 @@ alias bvc 'brew list --version --cask' # brew list (versions) casks
 
 # alias vcl 'nvim ~/KB/SysAdmin/07-Logs/@pickles-changelog/latest' # Update Changelog
 
-# Path alias
-# FIX? Moved to function
-# alias path "echo $PATH | tr ':' '\n'"
-
 # Banish those pesky .DS_Store files, recursively (macOS, of course)
 # alias dsstore-clean 'find . -path ./Library/ -prune -type f -name .DS_Store -print0 | xargs -0 rm'
 
 # Yazi shell wrapper
-# FIX? Moved to func
-# function y
-#     set tmp (mktemp -t "yazi-cwd.XXXXXX")
-#     yazi $argv --cwd-file="$tmp"
-#     if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-#         builtin cd -- "$cwd"
-#     end
-#     rm -f -- "$tmp"
-# end
+# (2024.11.18) Moved from functions to fix erratic behavior?
+function y
+    set tmp (mktemp -t "yazi-cwd.XXXXXX")
+    yazi $argv --cwd-file="$tmp"
+    if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+        builtin cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
+end
 
 # Interactive shell inits
 if status is-interactive
