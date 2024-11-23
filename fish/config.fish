@@ -83,6 +83,9 @@ alias gb 'git branch'
 alias gba 'git branch -a'
 alias graph 'git log --all --decorate --oneline --graph'
 
+# Rsync BU to SANDISK (Linux only?) -- >>> BUZ : Back Up Zettle <<<
+alias buz 'rsync -avh --delete ~/Zettlekasten/ /run/media/taz/SANDISK/Zettle/'
+
 # Restic (Linux)
 # alias backup 'restic -r /media/restic/home/ --verbose backup /home/taz/ --exclude=".src"'
 # alias snapshots 'restic -r /media/restic/home snapshots'
