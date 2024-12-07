@@ -119,15 +119,14 @@ alias buz 'rsync -avh --delete ~/Zettlekasten/ /run/media/taz/SANDISK/Zettle/'
 # alias dsstore-clean 'find . -path ./Library/ -prune -type f -name .DS_Store -print0 | xargs -0 rm'
 
 # Yazi shell wrapper
-# FIX? Moved to func
-# function y
-#     set tmp (mktemp -t "yazi-cwd.XXXXXX")
-#     yazi $argv --cwd-file="$tmp"
-#     if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-#         builtin cd -- "$cwd"
-#     end
-#     rm -f -- "$tmp"
-# end
+function y
+    set tmp (mktemp -t "yazi-cwd.XXXXXX")
+    yazi $argv --cwd-file="$tmp"
+    if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+        builtin cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
+end
 
 # Interactive shell inits
 if status is-interactive
